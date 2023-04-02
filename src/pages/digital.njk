@@ -5,11 +5,13 @@ eleventyNavigation:
   key: Digital
   order: 3
   url: /digital
-permalink: /digital/index.html
+permalink: /digital.html
 ---
 
-<div>
-  {% for entry in collections.digitalImages %}
-    <img src="{{ entry.url }}" alt="{{ entry.alt }}"/>
+<div class="grid grid-cols-3 gap-5">
+  {% for item in collections.digitalImages %}
+    <div class="relative">
+      <img src="{{ item.url }}" alt="{{ item.alt }}" class="object-cover w-[350px] h-[350px]"/>
+    </div>
   {% endfor %}
 </div>

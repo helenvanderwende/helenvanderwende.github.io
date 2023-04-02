@@ -5,11 +5,13 @@ eleventyNavigation:
   key: Drawings
   order: 1
   url: /drawings
-permalink: /drawings/index.html
+permalink: /drawings.html
 ---
 
-<div>
-  {% for entry in collections.drawingImages %}
-    <img src="{{ entry.url }}" alt="{{ entry.alt }}"/>
+<div class="grid grid-cols-3 gap-5">
+  {% for item in collections.drawingImages %}
+    <div class="relative">
+      <img src="{{ item.url }}" alt="{{ item.alt }}" class="object-cover w-[350px] h-[350px]"/>
+    </div>
   {% endfor %}
 </div>
