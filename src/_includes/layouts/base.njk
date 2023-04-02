@@ -1,26 +1,20 @@
+---
+metadata:
+  title: "Helen Vander Wende"
+  desc: "A website for Helen Vander Wende."
+  name: "Helen Vander Wende"
+  image: "/public/images/selfie.jpg"
+  twitter_card_type: "summary_large_image"
+  twitter_handle: "helenmvw"
+---
+
 <!doctype html>
 <html lang="en">
   <head>
-    <title>{{ title }}</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/public/favicon.ico">
+    {% metagen metadata %} <link rel="shortcut icon" type="image/x-icon" href="/public/favicon.ico">
     <link rel="stylesheet" href="https://use.typekit.net/uvl8ons.css">
     <link rel="stylesheet" type="text/css" href="/public/css/main.css"/>
     <link rel="stylesheet" type="text/css" href="/public/css/photoswipe.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta itemprop="name" content="Helen Vander Wende"/>
-    <meta itemprop="url" content="http://www.helenvanderwende.com"/>
-    <meta
-    itemprop="description" content="Art by Helen Vander Wende."/> {# open graph  #}
-    <meta property="og:site_name" content="Helen Vander Wende"/>
-    <meta property="og:title" content="Helen Vander Wende"/>
-    <meta property="og:url" content="http://www.helenvanderwende.com"/>
-    <meta property="og:type" content="website"/>
-    <meta
-    property="og:description" content="Art by Helen Vander Wende."/> {# twitter  #}
-    <meta name="twitter:title" content="Helen Vander Wende"/>
-    <meta name="twitter:url" content="http://www.helenvanderwende.com"/>
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content="Art by Helen Vander Wende."/>
   </head>
   <body>
     <main class="p-5 sm:p-[75px] max-w-6xl mx-auto">

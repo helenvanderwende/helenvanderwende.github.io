@@ -1,10 +1,12 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const metagen = require("eleventy-plugin-metagen");
 const gallery = require("./src/js/gallery");
 const images = require("./src/js/images");
 
 module.exports = function (eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(metagen);
 
   // Passthrough files
   eleventyConfig.addPassthroughCopy({ "src/public": "/public" });
