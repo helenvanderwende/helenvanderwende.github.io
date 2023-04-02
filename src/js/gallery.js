@@ -51,6 +51,7 @@ async function galleryImageShortcode(src) {
           data-pswp-width="${genMetadata.jpeg[1].width}"
           data-pswp-height="${genMetadata.jpeg[1].height}"
           target="_blank"
+          class="overflow-hidden aspect-square"
           >
             <img src="${genMetadata.jpeg[0].url}" alt="${alt}" class="aspect-square object-cover" />
         </a>
