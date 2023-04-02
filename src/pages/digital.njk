@@ -8,8 +8,8 @@ eleventyNavigation:
 permalink: /digital.html
 ---
 
-<div class="grid sm:grid-cols-3 gap-5">
-  {% for item in collections.digitalImages %}
-    <img src="{{ item.url }}" alt="{{ item.alt }}" class="aspect-squareobject-cover"/>
-  {% endfor %}
-</div>
+{% gallery "digital" %}
+{% for item in collections.digitalImages %}
+  {% galleryImage item.url, item.alt %}
+{% endfor %}
+{% endgallery %}

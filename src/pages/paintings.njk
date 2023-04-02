@@ -8,8 +8,8 @@ eleventyNavigation:
 permalink: /paintings.html
 ---
 
-<div class="grid sm:grid-cols-3 gap-5">
-  {% for item in collections.paintingImages %}
-    <img src="{{ item.url }}" alt="{{ item.alt }}" class="aspect-square object-cover"/>
-  {% endfor %}
-</div>
+{% gallery "paintings" %}
+{% for item in collections.paintingImages %}
+  {% galleryImage item.url, item.alt %}
+{% endfor %}
+{% endgallery %}
