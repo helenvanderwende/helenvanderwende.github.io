@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Portfolio website",
   "scripts": {
-    "build": "npx @11ty/eleventy",
+    "build": "npx @11ty/eleventy & tailwindcss -i ./src/styles/main.css -o ./dist/assets/main.css",
     "serve": "npx @11ty/eleventy --serve & tailwindcss -i ./src/styles/main.css -o ./dist/assets/main.css --watch"
   },
   "devDependencies": {
