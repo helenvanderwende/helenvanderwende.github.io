@@ -4,9 +4,12 @@
   "description": "Portfolio website",
   "scripts": {
     "build": "npx @11ty/eleventy",
-    "serve": "npx @11ty/eleventy --serve"
+    "serve": "npx @11ty/eleventy --serve & tailwindcss -i ./src/styles/main.css -o ./dist/assets/main.css --watch"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-navigation": "^0.3.0",
+    "fast-glob": "^3.2.12",
+    "tailwindcss": "^3.3.1"
   }
 }

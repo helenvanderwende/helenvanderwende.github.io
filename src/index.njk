@@ -1,0 +1,25 @@
+---
+title: Home
+layout: layouts/base.njk
+data:
+  - src: /assets/drawings/radishes.jpg
+    title: Drawings
+    url: /drawings
+  - src: /assets/paintings/thebay.jpg
+    title: Paintings
+    url: /paintings
+  - src: /assets/digital/flowers.jpg
+    title: Digital
+    url: /digital
+---
+
+<div class="grid grid-cols-3 gap-5">
+  {% for item in data %}
+    <a href="{{ item.url }}" class="block">
+      <div class="relative">
+        <img src="{{ item.src }}" alt="{{ item.title }}" class="w-full h-full object-cover"/>
+        <p class="text-center pt-2">{{ item.title }}</p>
+      </div>
+    </a>
+  {% endfor %}
+</div>

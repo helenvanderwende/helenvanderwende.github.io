@@ -1,0 +1,15 @@
+---
+title: Drawings
+layout: layouts/base.njk
+eleventyNavigation:
+  key: Drawings
+  order: 1
+  url: /drawings
+permalink: /drawings/index.html
+---
+
+<div>
+  {% for entry in collections.drawingImages %}
+    <img src="{{ entry.url }}" alt="{{ entry.alt }}"/>
+  {% endfor %}
+</div>
