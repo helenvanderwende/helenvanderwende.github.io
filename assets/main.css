@@ -617,6 +617,10 @@ video {
   height: 2rem;
 }
 
+.h-\[350px\] {
+  height: 350px;
+}
+
 .h-full {
   height: 100%;
 }
@@ -631,6 +635,10 @@ video {
 
 .w-8 {
   width: 2rem;
+}
+
+.w-\[350px\] {
+  width: 350px;
 }
 
 .w-full {
@@ -695,6 +703,11 @@ video {
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
 .bg-white\/30 {
