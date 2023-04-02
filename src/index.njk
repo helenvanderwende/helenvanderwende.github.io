@@ -13,11 +13,11 @@ data:
     url: /digital
 ---
 
-<div class="grid grid-cols-3 gap-5">
+<div class="grid sm:grid-cols-3 gap-5">
   {% for item in data %}
     <a href="{{ item.url }}" class="block">
       <div class="relative">
-        <img src="{{ item.src }}" alt="{{ item.title }}" class="w-full h-full object-cover"/>
+        <img src="{{ item.src }}" alt="{{ item.title }}" class="aspect-square object-cover"/>
         <p class="text-center pt-2">{{ item.title }}</p>
       </div>
     </a>

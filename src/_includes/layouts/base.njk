@@ -2,29 +2,30 @@
 <html lang="en">
   <head>
     <title>{{ title }}</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=PT+Sans:wght@400;700&display=swap"
-      rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="https://use.typekit.net/uvl8ons.css">
     <link rel="stylesheet" type="text/css" href="/assets/main.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta itemprop="name" content="Helen Vander Wende"/>
+    <meta itemprop="url" content="http://www.helenvanderwende.com"/>
+    <meta itemprop="description" content="Art by Helen Vander Wende."/>
+
+    /{# open graph  #}
     <meta property="og:site_name" content="Helen Vander Wende"/>
     <meta property="og:title" content="Helen Vander Wende"/>
     <meta property="og:url" content="http://www.helenvanderwende.com"/>
     <meta property="og:type" content="website"/>
     <meta property="og:description" content="Art by Helen Vander Wende."/>
-    <meta itemprop="name" content="Helen Vander Wende"/>
-    <meta itemprop="url" content="http://www.helenvanderwende.com"/>
-    <meta itemprop="description" content="Art by Helen Vander Wende."/>
+
+    {# twitter  #}
     <meta name="twitter:title" content="Helen Vander Wende"/>
     <meta name="twitter:url" content="http://www.helenvanderwende.com"/>
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:description" content="Art by Helen Vander Wende."/>
-    <meta name="description" content="Art by Helen Vander Wende."/>
   </head>
   <body>
-    <main class="p-12 max-w-6xl mx-auto">
+    <main class="p-5 sm:p-[75px] max-w-6xl mx-auto">
       {% include "../components/navigation.njk" %}
       {{ content | safe }}
     </main>

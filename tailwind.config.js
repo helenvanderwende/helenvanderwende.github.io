@@ -8,11 +8,31 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
-        "2xl": "2.625rem",
+        "2xl": "1.875rem",
+        "3xl": "2.625rem",
+      },
+      colors: {
+        pink: {
+          400: "#FF528B91",
+        },
       },
       fontFamily: {
+        futura: [
+          "futura-pt",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "Oxygen",
+          "Ubuntu",
+          "Cantarell",
+          "Fira Sans",
+          "Droid Sans",
+          "Helvetica Neue",
+          "sans-serif",
+        ],
         sans: [
-          "PT Sans",
+          "proxima-nova",
           "-apple-system",
           "BlinkMacSystemFont",
           "Segoe UI",
