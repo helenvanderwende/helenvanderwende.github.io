@@ -6099,7 +6099,7 @@ class Opener {
 /** @typedef {import('./main-scroll.js').ItemHolder} ItemHolder */
 /** @typedef {import('./core/eventable.js').PhotoSwipeEventsMap} PhotoSwipeEventsMap */
 /** @typedef {import('./core/eventable.js').PhotoSwipeFiltersMap} PhotoSwipeFiltersMap */
-/** @typedef {import('./slide/get-thumb-bounds').Bounds} Bounds */
+/** @typedef {import('./slide/get-thumb-bounds.js').Bounds} Bounds */
 /**
  * @template {keyof PhotoSwipeEventsMap} T
  * @typedef {import('./core/eventable.js').EventCallback<T>} EventCallback<T>

@@ -9,7 +9,7 @@ permalink: /digital.html
 ---
 
 {% gallery "digital" %}
-{% for item in collections.digitalImages %}
-  {% galleryImage item.url, item.alt %}
+{% for item in collections.images.digital %}
+  {% galleryImage item %}
 {% endfor %}
 {% endgallery %}

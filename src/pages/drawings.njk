@@ -9,7 +9,7 @@ permalink: /drawings.html
 ---
 
 {% gallery "drawings" %}
-{% for item in collections.drawingImages %}
-  {% galleryImage item.url, item.alt %}
+{% for item in collections.images.drawings %}
+  {% galleryImage item %}
 {% endfor %}
 {% endgallery %}
