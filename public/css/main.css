@@ -573,6 +573,10 @@ video {
   gap: 1.25rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .whitespace-nowrap {
   white-space: nowrap;
 }
