@@ -26,7 +26,6 @@ function galleryShortcode(content, name) {
 }
 
 async function galleryImageShortcode(src) {
-  const alt = src.split("/").pop();
   const metadata = await sharp(src).metadata();
 
   let lightboxImageWidth = LANDSCAPE_LIGHTBOX_IMAGE_WIDTH;
@@ -53,7 +52,7 @@ async function galleryImageShortcode(src) {
           target="_blank"
           class="overflow-hidden aspect-square"
           >
-            <img src="${genMetadata.jpeg[0].url}" alt="${alt}" class="aspect-square object-cover" />
+            <img src="${genMetadata.jpeg[0].url}" alt="" class="aspect-square object-cover" />
         </a>
     `.replace(/(\r\n|\n|\r)/gm, "");
 }
