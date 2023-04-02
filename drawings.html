@@ -5,20 +5,18 @@
     <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="https://use.typekit.net/uvl8ons.css">
     <link rel="stylesheet" type="text/css" href="/assets/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/photoswipe.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <meta itemprop="name" content="Helen Vander Wende"/>
     <meta itemprop="url" content="http://www.helenvanderwende.com"/>
-    <meta itemprop="description" content="Art by Helen Vander Wende."/>
-
-    /
+    <meta itemprop="description" content="Art by Helen Vander Wende."/> /
+    
     <meta property="og:site_name" content="Helen Vander Wende"/>
     <meta property="og:title" content="Helen Vander Wende"/>
     <meta property="og:url" content="http://www.helenvanderwende.com"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:description" content="Art by Helen Vander Wende."/>
-
-    
+    <meta
+    property="og:description" content="Art by Helen Vander Wende."/> 
     <meta name="twitter:title" content="Helen Vander Wende"/>
     <meta name="twitter:url" content="http://www.helenvanderwende.com"/>
     <meta name="twitter:card" content="summary"/>
@@ -65,19 +63,7 @@
 </header>
 
       
-<div class="grid sm:grid-cols-3 gap-5">
-  
-    <img src="/assets/drawings/Skuuull.jpg" alt="Skuuull.jpg" class="aspect-square object-cover"/>
-  
-    <img src="/assets/drawings/radishes.jpg" alt="radishes.jpg" class="aspect-square object-cover"/>
-  
-    <img src="/assets/drawings/skull-blob.jpg" alt="skull-blob.jpg" class="aspect-square object-cover"/>
-  
-    <img src="/assets/drawings/squiggles.jpg" alt="squiggles.jpg" class="aspect-square object-cover"/>
-  
-    <img src="/assets/drawings/squiggles2.jpg" alt="squiggles2.jpg" class="aspect-square object-cover"/>
-  
-</div>
+        <div>            <div class="gallery grid min-[380px]:grid-cols-2 sm:grid-cols-3 gap-5" id="gallery-drawings">                          <a          href="/assets/drawings/Skuuull.jpg"          data-pswp-width="1575"          data-pswp-height="1945"          target="_blank"          >            <img src="/assets/gen/4OiqyqrEEY-350.jpeg" alt="Skuuull.jpg" class="aspect-square object-cover" />        </a>              <a          href="/assets/drawings/radishes.jpg"          data-pswp-width="3024"          data-pswp-height="3024"          target="_blank"          >            <img src="/assets/gen/cW4GkQcVgF-350.jpeg" alt="radishes.jpg" class="aspect-square object-cover" />        </a>              <a          href="/assets/drawings/skull-blob.jpg"          data-pswp-width="3024"          data-pswp-height="3024"          target="_blank"          >            <img src="/assets/gen/08jtfq8W5K-350.jpeg" alt="skull-blob.jpg" class="aspect-square object-cover" />        </a>              <a          href="/assets/drawings/squiggles.jpg"          data-pswp-width="1944"          data-pswp-height="1944"          target="_blank"          >            <img src="/assets/gen/0yNy6w-OKa-350.jpeg" alt="squiggles.jpg" class="aspect-square object-cover" />        </a>              <a          href="/assets/drawings/squiggles2.jpg"          data-pswp-width="2906"          data-pswp-height="2906"          target="_blank"          >            <img src="/assets/gen/KYy5OPKkXH-350.jpeg" alt="squiggles2.jpg" class="aspect-square object-cover" />        </a>                </div>            <script type="module">                import PhotoSwipeLightbox from '/js/photoswipe-lightbox.esm.js';                const lightbox = new PhotoSwipeLightbox({                gallery: '#gallery-drawings',                  children: 'a',                  pswpModule: () => import('/js/photoswipe.esm.js'),                  preload: [1, 1]                });                lightbox.init();            </script>        </div>    
 
     </main>
   </body>

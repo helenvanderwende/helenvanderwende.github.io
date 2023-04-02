@@ -5,20 +5,18 @@
     <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="https://use.typekit.net/uvl8ons.css">
     <link rel="stylesheet" type="text/css" href="/assets/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/photoswipe.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <meta itemprop="name" content="Helen Vander Wende"/>
     <meta itemprop="url" content="http://www.helenvanderwende.com"/>
-    <meta itemprop="description" content="Art by Helen Vander Wende."/>
-
-    /
+    <meta itemprop="description" content="Art by Helen Vander Wende."/> /
+    
     <meta property="og:site_name" content="Helen Vander Wende"/>
     <meta property="og:title" content="Helen Vander Wende"/>
     <meta property="og:url" content="http://www.helenvanderwende.com"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:description" content="Art by Helen Vander Wende."/>
-
-    
+    <meta
+    property="og:description" content="Art by Helen Vander Wende."/> 
     <meta name="twitter:title" content="Helen Vander Wende"/>
     <meta name="twitter:url" content="http://www.helenvanderwende.com"/>
     <meta name="twitter:card" content="summary"/>
@@ -65,21 +63,7 @@
 </header>
 
       
-<div class="grid sm:grid-cols-3 gap-5">
-  
-    <img src="/assets/digital/flowers.jpg" alt="flowers.jpg" class="aspect-squareobject-cover"/>
-  
-    <img src="/assets/digital/icecreamcone.jpg" alt="icecreamcone.jpg" class="aspect-squareobject-cover"/>
-  
-    <img src="/assets/digital/icecreamcone2.jpg" alt="icecreamcone2.jpg" class="aspect-squareobject-cover"/>
-  
-    <img src="/assets/digital/leeks.jpg" alt="leeks.jpg" class="aspect-squareobject-cover"/>
-  
-    <img src="/assets/digital/pink-face.jpg" alt="pink-face.jpg" class="aspect-squareobject-cover"/>
-  
-    <img src="/assets/digital/sushi.jpg" alt="sushi.jpg" class="aspect-squareobject-cover"/>
-  
-</div>
+        <div>            <div class="gallery grid min-[380px]:grid-cols-2 sm:grid-cols-3 gap-5" id="gallery-digital">                          <a          href="/assets/digital/flowers.jpg"          data-pswp-width="1500"          data-pswp-height="1500"          target="_blank"          >            <img src="/assets/gen/c-zMbs4Y-2-350.jpeg" alt="flowers.jpg" class="aspect-square object-cover" />        </a>              <a          href="/assets/digital/icecreamcone.jpg"          data-pswp-width="1024"          data-pswp-height="1024"          target="_blank"          >            <img src="/assets/gen/U9Qh4nXqwB-350.jpeg" alt="icecreamcone.jpg" class="aspect-square object-cover" />        </a>              <a          href="/assets/digital/icecreamcone2.jpg"          data-pswp-width="914"          data-pswp-height="914"          target="_blank"          >            <img src="/assets/gen/1CeGmMCE52-350.jpeg" alt="icecreamcone2.jpg" class="aspect-square object-cover" />        </a>              <a          href="/assets/digital/leeks.jpg"          data-pswp-width="4899"          data-pswp-height="4899"          target="_blank"          >            <img src="/assets/gen/kHLG0ZAXBz-350.jpeg" alt="leeks.jpg" class="aspect-square object-cover" />        </a>              <a          href="/assets/digital/pink-face.jpg"          data-pswp-width="3600"          data-pswp-height="3600"          target="_blank"          >            <img src="/assets/gen/c7-tzowEXY-350.jpeg" alt="pink-face.jpg" class="aspect-square object-cover" />        </a>              <a          href="/assets/digital/sushi.jpg"          data-pswp-width="1262"          data-pswp-height="1262"          target="_blank"          >            <img src="/assets/gen/CJ9WWdoh5J-350.jpeg" alt="sushi.jpg" class="aspect-square object-cover" />        </a>                </div>            <script type="module">                import PhotoSwipeLightbox from '/js/photoswipe-lightbox.esm.js';                const lightbox = new PhotoSwipeLightbox({                gallery: '#gallery-digital',                  children: 'a',                  pswpModule: () => import('/js/photoswipe.esm.js'),                  preload: [1, 1]                });                lightbox.init();            </script>        </div>    
 
     </main>
   </body>
