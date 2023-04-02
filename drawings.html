@@ -2,15 +2,15 @@
 <html lang="en">
   <head>
     <title>Drawings</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/public/favicon.ico">
     <link rel="stylesheet" href="https://use.typekit.net/uvl8ons.css">
-    <link rel="stylesheet" type="text/css" href="/assets/main.css"/>
-    <link rel="stylesheet" type="text/css" href="/assets/photoswipe.css"/>
+    <link rel="stylesheet" type="text/css" href="/public/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/public/css/photoswipe.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta itemprop="name" content="Helen Vander Wende"/>
     <meta itemprop="url" content="http://www.helenvanderwende.com"/>
-    <meta itemprop="description" content="Art by Helen Vander Wende."/>
-    
+    <meta
+    itemprop="description" content="Art by Helen Vander Wende."/> 
     <meta property="og:site_name" content="Helen Vander Wende"/>
     <meta property="og:title" content="Helen Vander Wende"/>
     <meta property="og:url" content="http://www.helenvanderwende.com"/>
@@ -63,7 +63,7 @@
 </header>
 
       
-        <div>            <div class="gallery grid min-[380px]:grid-cols-2 sm:grid-cols-3 gap-5" id="gallery-drawings">                          <a          href="/public/images/4OiqyqrEEY-720.jpeg"          data-pswp-width="720"          data-pswp-height="889"          target="_blank"          >            <img src="/public/images/4OiqyqrEEY-350.jpeg" alt="Skuuull.jpg" class="aspect-square object-cover" />        </a>              <a          href="/public/images/cW4GkQcVgF-2000.jpeg"          data-pswp-width="2000"          data-pswp-height="2000"          target="_blank"          >            <img src="/public/images/cW4GkQcVgF-350.jpeg" alt="radishes.jpg" class="aspect-square object-cover" />        </a>              <a          href="/public/images/08jtfq8W5K-2000.jpeg"          data-pswp-width="2000"          data-pswp-height="2000"          target="_blank"          >            <img src="/public/images/08jtfq8W5K-350.jpeg" alt="skull-blob.jpg" class="aspect-square object-cover" />        </a>              <a          href="/public/images/0yNy6w-OKa-1944.jpeg"          data-pswp-width="1944"          data-pswp-height="1944"          target="_blank"          >            <img src="/public/images/0yNy6w-OKa-350.jpeg" alt="squiggles.jpg" class="aspect-square object-cover" />        </a>              <a          href="/public/images/KYy5OPKkXH-2000.jpeg"          data-pswp-width="2000"          data-pswp-height="2000"          target="_blank"          >            <img src="/public/images/KYy5OPKkXH-350.jpeg" alt="squiggles2.jpg" class="aspect-square object-cover" />        </a>                </div>            <script type="module">                import PhotoSwipeLightbox from '/js/photoswipe-lightbox.esm.js';                const lightbox = new PhotoSwipeLightbox({                gallery: '#gallery-drawings',                  children: 'a',                  pswpModule: () => import('/js/photoswipe.esm.js'),                  preload: [1, 1]                });                lightbox.init();            </script>        </div>    
+        <div>            <div class="gallery grid min-[380px]:grid-cols-2 sm:grid-cols-3 gap-5" id="gallery-drawings">                          <a          href="/public/images/4OiqyqrEEY-720.jpeg"          data-pswp-width="720"          data-pswp-height="889"          target="_blank"          >            <img src="/public/images/4OiqyqrEEY-350.jpeg" alt="Skuuull.jpg" class="aspect-square object-cover" />        </a>              <a          href="/public/images/cW4GkQcVgF-2000.jpeg"          data-pswp-width="2000"          data-pswp-height="2000"          target="_blank"          >            <img src="/public/images/cW4GkQcVgF-350.jpeg" alt="radishes.jpg" class="aspect-square object-cover" />        </a>              <a          href="/public/images/08jtfq8W5K-2000.jpeg"          data-pswp-width="2000"          data-pswp-height="2000"          target="_blank"          >            <img src="/public/images/08jtfq8W5K-350.jpeg" alt="skull-blob.jpg" class="aspect-square object-cover" />        </a>              <a          href="/public/images/0yNy6w-OKa-1944.jpeg"          data-pswp-width="1944"          data-pswp-height="1944"          target="_blank"          >            <img src="/public/images/0yNy6w-OKa-350.jpeg" alt="squiggles.jpg" class="aspect-square object-cover" />        </a>              <a          href="/public/images/KYy5OPKkXH-2000.jpeg"          data-pswp-width="2000"          data-pswp-height="2000"          target="_blank"          >            <img src="/public/images/KYy5OPKkXH-350.jpeg" alt="squiggles2.jpg" class="aspect-square object-cover" />        </a>                </div>            <script type="module">                import PhotoSwipeLightbox from '/public/js/photoswipe-lightbox.esm.js';                const lightbox = new PhotoSwipeLightbox({                gallery: '#gallery-drawings',                  children: 'a',                  pswpModule: () => import('/public/js/photoswipe.esm.js'),                  preload: [1, 1]                });                lightbox.init();            </script>        </div>    
 
     </main>
   </body>
