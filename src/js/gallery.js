@@ -12,11 +12,11 @@ function galleryShortcode(content, name) {
                 ${content}
             </div>
             <script type="module">
-                import PhotoSwipeLightbox from '/js/photoswipe-lightbox.esm.js';
+                import PhotoSwipeLightbox from '/public/js/photoswipe-lightbox.esm.js';
                 const lightbox = new PhotoSwipeLightbox({
                 gallery: '#gallery-${name}',
                   children: 'a',
-                  pswpModule: () => import('/js/photoswipe.esm.js'),
+                  pswpModule: () => import('/public/js/photoswipe.esm.js'),
                   preload: [1, 1]
                 });
                 lightbox.init();
