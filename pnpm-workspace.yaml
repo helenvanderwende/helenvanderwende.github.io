@@ -1,0 +1,6 @@
+allowBuilds:
+  '@parcel/watcher': true
+  sharp: true
+minimumReleaseAge: 10080
+overrides:
+  sharp: ^0.35.3

@@ -1,3 +1,20 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-futura: "futura-pt", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  --font-sans: "proxima-nova", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+
+  --text-2xl: 1.875rem;
+  --text-3xl: 2.625rem;
+
+  --color-pink-400: #ff528b91;
+}
+
+@source "../_includes/**/*.{html,md,11ty.js,liquid,njk,hbs,mustache,ejs,haml,pug}";
+@source "../pages/**/*.{html,md,11ty.js,liquid,njk,hbs,mustache,ejs,haml,pug}";
+@source "../index.{html,md,11ty.js,liquid,njk,hbs,mustache,ejs,haml,pug}";
+@source "../js/gallery.js";
